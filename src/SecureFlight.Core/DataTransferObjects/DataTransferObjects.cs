@@ -1,6 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 
-namespace SecureFlight.Api.Models;
+namespace SecureFlight.Core.DataTransferObjects;
 
 public record AirportDataTransferObject([Required]string Code, [Required]string Name, [Required]string City, [Required]string Country);
 
