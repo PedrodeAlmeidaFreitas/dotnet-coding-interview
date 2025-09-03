@@ -2,7 +2,7 @@
 {
     public enum ErrorCode
     {
-        InternalError,
+        BadRequest,
         NotFound
     }
 }

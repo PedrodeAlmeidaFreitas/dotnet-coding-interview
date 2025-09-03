@@ -1,6 +1,4 @@
-﻿using SecureFlight.Core;
-
-namespace SecureFlight.Api.Models;
+﻿namespace SecureFlight.Core.DataTransferObjects;
 
 public class ErrorResponse
 {

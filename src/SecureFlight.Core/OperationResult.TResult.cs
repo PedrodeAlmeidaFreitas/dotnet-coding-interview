@@ -23,7 +23,7 @@ public class OperationResult<TResult> : OperationResult
 
     public static OperationResult<TResult> Error(params string[] errorMessages) => new OperationResult<TResult>(new Error
     {
-        Code = ErrorCode.InternalError,
+        Code = ErrorCode.BadRequest,
         Message = string.Join(Environment.NewLine, errorMessages)
     });
     
