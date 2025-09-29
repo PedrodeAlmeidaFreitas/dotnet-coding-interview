@@ -13,4 +13,6 @@ public interface IService<TEntity>
     Task<OperationResult<IReadOnlyList<TEntity>>> FilterAsync(Expression<Func<TEntity, bool>> predicate);
     
     Task<OperationResult<TEntity>> FindAsync(params object[] keyValues);
+
+    OperationResult<TEntity> Update(TEntity entity);
 }

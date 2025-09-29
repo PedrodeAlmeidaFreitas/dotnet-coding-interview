@@ -26,4 +26,9 @@ public class BaseService<TEntity>(IRepository<TEntity> repository) : IService<TE
             OperationResult<TEntity>.NotFound($"Entity with key values {string.Join(", ", keyValues)} was not found") :
             OperationResult<TEntity>.Success(entity);
     }
+
+    public OperationResult<TEntity> Update(TEntity predicate)
+    {
+        return OperationResult<TEntity>.Success(repository.Update(predicate));
+    }
 }

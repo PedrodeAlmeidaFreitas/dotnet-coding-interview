@@ -26,6 +26,7 @@ public class BaseRepository<TEntity>(SecureFlightDbContext context)
     {
         var entry = context.Entry(entity);
         entry.State = EntityState.Modified;
+        context.SaveChanges();
         return entity;
     }
 
